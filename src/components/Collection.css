@@ -1,0 +1,55 @@
+/* components/Collection.css */
+
+.collection {
+  background-color: var(--color-bg);
+}
+
+/* Alternate background for visual rhythm between sections */
+.collection:nth-of-type(even) {
+  background-color: #F2EFEA;
+}
+
+/* ── Section header ── */
+.collection__header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* ── Product grid ── */
+.collection__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* On large screens, cap at 4 columns */
+@media (min-width: 1280px) {
+  .collection__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* For Women's 3-card grid, use 3 columns max */
+.collection__grid--three {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (min-width: 1024px) {
+  .collection__grid--three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .collection__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .collection__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

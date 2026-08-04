@@ -1,0 +1,113 @@
+/* components/CTA.css */
+
+.cta {
+  position: relative;
+  background-color: var(--color-bg-dark);
+  overflow: hidden;
+  padding: var(--spacing-2xl) 0;
+}
+
+/* Subtle radial glow for premium feel */
+.cta__texture {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 50%,
+    rgba(184, 150, 12, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.cta__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+/* Eyebrow */
+.cta__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* Heading */
+.cta__heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+/* Supporting text */
+.cta__sub {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 420px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+/* Button */
+.cta__btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #ffffff;
+  color: var(--color-bg-dark);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 1rem 2.8rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid #ffffff;
+  transition: background-color var(--transition-base), color var(--transition-base), transform var(--transition-fast);
+  text-decoration: none;
+}
+
+.cta__btn:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Decorative horizontal lines */
+.cta::before,
+.cta::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, rgba(184, 150, 12, 0.4), transparent);
+}
+.cta::before { top: 0; }
+.cta::after  { bottom: 0; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .cta {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .cta__btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
