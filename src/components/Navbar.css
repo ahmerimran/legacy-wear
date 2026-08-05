@@ -32,9 +32,11 @@
 }
 
 .navbar__logo {
-  height: 42px;
+  height: 70px;
   width: auto;
   object-fit: contain;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 /* ── Desktop Links ── */

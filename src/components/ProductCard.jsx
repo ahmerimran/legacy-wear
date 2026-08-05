@@ -63,13 +63,24 @@ export default function ProductCard({ product }) {
           </span>
         ) : (
           <a
-            href={purchaseLink}
+            href="https://ig.me/m/legacywearstore"
             target="_blank"
             rel="noopener noreferrer"
             className="product-card__btn btn-primary"
-            aria-label={`Purchase ${name} on Instagram`}
-          >
-            Purchase Now
+            onClick={async (e) => {
+            e.preventDefault(); // stop default navigation until copy finishes
+
+       try {
+          await navigator.clipboard.writeText(purchaseLink.text);
+          alert('Product details copied! Just paste it in the DM.');
+       } catch (err) {
+             console.error('Copy failed:', err); // clipboard blocked (e.g. non-https, permissions)
+          }
+
+         window.open('https://ig.me/m/legacywearstore', '_blank', 'noopener,noreferrer'); // navigate after copy completes
+      }}
+  >
+  Purchase Now
           </a>
         )}
       </div>

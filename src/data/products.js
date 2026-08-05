@@ -20,87 +20,110 @@
 //  }
 // ─────────────────────────────────────────────────────────────────────
 
-const PURCHASE_LINK = 'https://instagram.com/legacywearstore'
+const INSTAGRAM_USERNAME = "legacywearstore";
+
+const createPurchaseLink = (product) => {
+  const message = `Hi LegacyWear 👋
+
+I'm interested in:
+
+🛍 Product: ${product.name}
+💰 Price: ${product.price}
+
+  Please share details. Thanks!`;
+
+  return {
+    url: `https://www.instagram.com/${INSTAGRAM_USERNAME}`,
+    text: message,
+  };
+};
 
 // ── Men's Collection ──────────────────────────────────────────────────
 export const mensWatches = [
   {
     id: 'men-cartier-black',
     name: 'Cartier Black',
-    price: 'Rs. 4,999',
+    price: 'Rs. 2,499',
     description:
       'Bold black finish with a clean, modern look. Perfect for everyday wear.',
     // Replace this URL with: '/products/cartier-black.jpg' once you add the image
     image:
-      'https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&q=80',
+      '/products/cartier-black.jpg',
     category: 'Men',
-    purchaseLink: PURCHASE_LINK,
+    purchaseLink: createPurchaseLink({
+  name: 'Cartier Black',
+  price: 'Rs. 2,499'
+}),
   },
   {
     id: 'men-cartier-blue',
     name: 'Cartier Blue',
-    price: 'Rs. 4,999',
+    price: 'Rs. 2,499',
     description:
       'Deep blue tone with a refined feel. Adds a subtle touch of class.',
     image:
       'https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80',
     category: 'Men',
-    purchaseLink: PURCHASE_LINK,
+    purchaseLink: createPurchaseLink({
+  name: 'Cartier Blue',
+  price: 'Rs. 2,499'
+}),
   },
   {
     id: 'men-cartier-brown',
     name: 'Cartier Brown',
-    price: 'Rs. 4,999',
+    price: 'Rs. 2,499',
     description:
       'Warm brown shade with a classic aesthetic. Simple and stylish.',
     image:
       'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&q=80',
     category: 'Men',
-    purchaseLink: PURCHASE_LINK,
+    purchaseLink: createPurchaseLink({
+  name: 'Cartier Brown',
+  price: 'Rs. 2,499'
+}),
   },
   {
-    id: 'men-cartier-silver',
-    name: 'Cartier Silver',
-    price: 'Rs. 4,999',
+    id: 'men-cartier-brown',
+    name: 'Cartier Brown (Roman)',
+    price: 'Rs. 2,499',
     description:
-      'Clean silver design with a minimal look. Easy to match with any outfit.',
+      'Clean gold design with a minimal look. Easy to match with any outfit.',
     image:
       'https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=600&q=80',
     category: 'Men',
-    purchaseLink: PURCHASE_LINK,
+    purchaseLink: createPurchaseLink({
+  name: 'Cartier Brown(Roman)',
+  price: 'Rs. 2,499'
+}),
   },
   {
-    id: 'men-cartier-gold',
-    name: 'Cartier Gold',
-    price: 'Rs. 4,999',
+    id: 'men-cartier-black',
+    name: 'Cartier Black (Roman)',
+    price: 'Rs. 2,499',
     description:
       'Luxury-inspired gold finish. Designed to stand out effortlessly.',
     image:
       'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80',
     category: 'Men',
-    purchaseLink: PURCHASE_LINK,
+    purchaseLink: createPurchaseLink({
+  name: 'Cartier Black (Roman)',
+  price: 'Rs. 2,499'
+}),
   },
   {
-    id: 'men-cartier-grey',
-    name: 'Cartier Grey',
-    price: 'Rs. 4,999',
+    id: 'men-elegance',
+    name: 'Elegance',
+    price: 'Rs. 3,799',
     description:
-      'Modern grey tone with a sleek appearance. Understated and premium.',
+      'Modern watch with a sleek appearance. Understated and premium.',
     image:
       'https://images.unsplash.com/photo-1590664216364-0e2116ec5ac3?w=600&q=80',
     category: 'Men',
-    purchaseLink: PURCHASE_LINK,
-  },
-  {
-    id: 'men-cartier-white',
-    name: 'Cartier White',
-    price: 'Rs. 4,999',
-    description:
-      'Fresh white look with a minimal vibe. Light, clean and elegant.',
-    image:
-      'https://images.unsplash.com/photo-1623998021816-57c57e36e5e8?w=600&q=80',
-    category: 'Men',
-    purchaseLink: PURCHASE_LINK,
+    purchaseLink: createPurchaseLink({
+  name: 'Elegance',
+  price: 'Rs. 3,799'
+}),
   },
 ]
 
