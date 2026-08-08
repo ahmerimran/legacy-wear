@@ -3,16 +3,18 @@
 .hero {
   position: relative;
   width: 100%;
-  height: auto;
+  height: calc(100vh - 72px);
   overflow: hidden;
+  background-color: #0a3d20;
 }
 
 .hero__image {
-  position: static;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
 /* ── Clickable overlay wrapper ── */
