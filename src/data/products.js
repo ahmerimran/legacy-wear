@@ -48,8 +48,8 @@ export const mensWatches = [
       'Black and silver finish with a clean, modern look. Perfect for everyday wear.',
     // Replace this URL with: '/products/cartier-black.jpg' once you add the image
     images: [
-      'products/cartier-black-silver.jpeg',
-      'products/cartier-black-silver-1.png',
+      '/products/cartier-black-silver.jpeg',
+      '/products/cartier-black-silver-1.png',
   ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
@@ -65,8 +65,8 @@ export const mensWatches = [
     description:
       'Deep blue tone with a refined feel. Adds a subtle touch of class.',
     images : [
-      'products/cartier-blue.jpeg',
-      'products/cartier-blue-1.png',
+      '/products/cartier-blue.jpeg',
+      '/products/cartier-blue-1.png',
     ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
@@ -82,8 +82,8 @@ export const mensWatches = [
     description:
       'Warm brown shade with a classic aesthetic. Simple and stylish.',
     images: [
-      'products/cartier-brown.jpeg',
-      'products/cartier-brown-1.png',
+      '/products/cartier-brown.jpeg',
+      '/products/cartier-brown-1.png',
   ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
@@ -99,8 +99,8 @@ export const mensWatches = [
     description:
       'Clean gold design with a minimal look. Easy to match with any outfit.',
     images: [ 
-       'products/cartier-black-gold.jpeg',
-       'products/cartier-black-gold-1.png',
+       '/products/cartier-black-gold.jpeg',
+       '/products/cartier-black-gold-1.png',
     ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
@@ -116,8 +116,8 @@ export const mensWatches = [
     description:
       'Luxury-inspired black finish. Designed to stand out effortlessly.',
     images : [
-      'products/cartier-black.jpeg',
-      'products/cartier-black-1.png',
+      '/products/cartier-black.jpeg',
+      '/products/cartier-black-1.png',
     ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
@@ -133,8 +133,8 @@ export const mensWatches = [
     description:
       'Modern watch with a sleek appearance. Understated and premium.',
     images : [
-      'products/elegance.jpeg',
-      'products/elegance-1.png',
+      '/products/elegance.jpeg',
+      '/products/elegance-1.png',
     ],
     category: 'Men',
     purchaseLink: createPurchaseLink({

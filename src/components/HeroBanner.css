@@ -3,10 +3,16 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 72px);
-  min-height: 400px;
+  height: auto;
   overflow: hidden;
-  background-color: #0a3d20;
+}
+
+.hero__image {
+  position: static;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 /* ── Clickable overlay wrapper ── */
@@ -23,18 +29,6 @@
 .hero__clickable:focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: -3px;
-}
-
-/* ── Background image ── */
-.hero__image {
-  position: static;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  transition: transform 8s ease;
-  will-change: transform;
 }
 
 /* Subtle zoom-in on load */
