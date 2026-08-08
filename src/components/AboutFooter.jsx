@@ -129,6 +129,18 @@ export default function AboutFooter() {
           </ul>
         </div>
 
+        {/* ── Policies ───────────────────────────────────────── */}
+        <div className="about-footer__policies">
+           <h3 className="about-footer__contact-title">Policies</h3>
+            <ul className="about-footer__policy-list">
+               <li>Full payment is required before the order is confirmed.</li>
+               <li>Delivery takes 4–5 working days.</li>
+               <li>Delivery may take 1–2 extra days due to courier delays or unforeseen circumstances.</li>
+               <li>Once payment is completed, you'll receive a picture of your packed parcel.</li>
+               <li>Tracking details will be shared once your order is shipped.</li>
+          </ul>
+       </div>
+
         {/* ── Bottom Bar ─────────────────────────────────────────────── */}
         <div className="about-footer__bottom" aria-label="Footer legal">
           <p className="about-footer__copy">

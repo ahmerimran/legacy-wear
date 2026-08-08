@@ -23,7 +23,7 @@ export default function CTA() {
         </h2>
 
         <p className="cta__sub">
-          DM us on Instagram to place your order. Fast replies, easy process.
+          DM us on Instagram for more queries. Fast replies, easy process.
         </p>
 
         <a
@@ -34,7 +34,7 @@ export default function CTA() {
           className="cta__btn"
           aria-label="Purchase your Legacy Wear watch on Instagram"
         >
-          Purchase Now
+          Message Us
         </a>
       </div>
     </section>

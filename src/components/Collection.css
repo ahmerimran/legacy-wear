@@ -20,6 +20,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
+  align-items: stretch;
 }
 
 /* On large screens, cap at 4 columns */
@@ -52,4 +53,8 @@
   .collection__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.collection__grid > div {
+  height: 100%;
 }

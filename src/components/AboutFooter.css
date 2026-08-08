@@ -138,3 +138,18 @@
     justify-content: space-between;
   }
 }
+
+.about-footer__policy-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.about-footer__policy-list li::before {
+  content: '— ';
+  color: var(--color-accent);
+}

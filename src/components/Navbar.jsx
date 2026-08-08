@@ -7,7 +7,7 @@ import './Navbar.css'
 // ─── Logo image path ────────────────────────────────────────────────────────
 // Place your logo file at: public/logo.png  (or .svg / .webp)
 // Then update the src below. Current path uses the public root.
-const LOGO_SRC = '/logo.jpeg'
+const LOGO_SRC = '/logo.png'
 const LOGO_FALLBACK = 'https://placehold.co/160x48/111111/B8960C?text=LEGACY+WEAR&font=playfair-display'
 
 export default function Navbar() {

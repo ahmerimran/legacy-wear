@@ -20,20 +20,19 @@
 //  }
 // ─────────────────────────────────────────────────────────────────────
 
-const INSTAGRAM_USERNAME = "legacywearstore";
+const WHATSAPP_NUMBER = "923717047369"; // replace with your actual number (country code, no + or leading 0)
 
 const createPurchaseLink = (product) => {
-  const message = `Hi LegacyWear 👋
+  const message = `Hi LegacyWear 
 
 I'm interested in:
 
-🛍 Product: ${product.name}
-💰 Price: ${product.price}
+Product: *${product.name}*
+Price: *${product.price}*
 
-  Please share details. Thanks!`;
+Please share details. Thanks!`;
 
   return {
-    url: `https://www.instagram.com/${INSTAGRAM_USERNAME}`,
     text: message,
   };
 };
@@ -41,89 +40,127 @@ I'm interested in:
 // ── Men's Collection ──────────────────────────────────────────────────
 export const mensWatches = [
   {
-    id: 'men-cartier-black',
-    name: 'Cartier Black',
-    price: 'Rs. 2,499',
+    id: 'men-cartier-black-silver',
+    name: 'Cartier Black (Roman)',
+    price: 'Rs. 2,975',
+    originalPrice: 'Rs. 3,500',
     description:
-      'Bold black finish with a clean, modern look. Perfect for everyday wear.',
+      'Black and silver finish with a clean, modern look. Perfect for everyday wear.',
     // Replace this URL with: '/products/cartier-black.jpg' once you add the image
-    image:
-      '/products/cartier-black.jpg',
+    images: [
+      'products/cartier-black-silver.jpeg',
+      'products/cartier-black-silver-1.png',
+  ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Black',
-  price: 'Rs. 2,499'
+  price: 'Rs. 2,975'
 }),
   },
   {
     id: 'men-cartier-blue',
     name: 'Cartier Blue',
-    price: 'Rs. 2,499',
+    price: 'Rs. 2,465',
+    originalPrice: 'Rs. 2,900',
     description:
       'Deep blue tone with a refined feel. Adds a subtle touch of class.',
-    image:
-      'https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80',
+    images : [
+      'products/cartier-blue.jpeg',
+      'products/cartier-blue-1.png',
+    ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Blue',
-  price: 'Rs. 2,499'
+  price: 'Rs. 2,465'
 }),
   },
   {
     id: 'men-cartier-brown',
     name: 'Cartier Brown',
-    price: 'Rs. 2,499',
+    price: 'Rs. 2,975',
+    originalPrice: 'Rs. 3,000',
     description:
       'Warm brown shade with a classic aesthetic. Simple and stylish.',
-    image:
-      'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&q=80',
+    images: [
+      'products/cartier-brown.jpeg',
+      'products/cartier-brown-1.png',
+  ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Brown',
-  price: 'Rs. 2,499'
+  price: 'Rs. 2,975'
 }),
   },
   {
-    id: 'men-cartier-brown',
-    name: 'Cartier Brown (Roman)',
-    price: 'Rs. 2,499',
+    id: 'men-cartier-black-gold',
+    name: 'Cartier Black (Roman)',
+    price: 'Rs. 2,465',
+    originalPrice: 'Rs. 2,900',
     description:
       'Clean gold design with a minimal look. Easy to match with any outfit.',
-    image:
-      'https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=600&q=80',
+    images: [ 
+       'products/cartier-black-gold.jpeg',
+       'products/cartier-black-gold-1.png',
+    ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
-  name: 'Cartier Brown(Roman)',
-  price: 'Rs. 2,499'
+  name: 'Cartier Black (Roman)',
+  price: 'Rs. 2,465'
 }),
   },
   {
     id: 'men-cartier-black',
     name: 'Cartier Black (Roman)',
-    price: 'Rs. 2,499',
+    price: 'Rs. 2,465',
+    originalPrice: 'Rs. 2,900',
     description:
-      'Luxury-inspired gold finish. Designed to stand out effortlessly.',
-    image:
-      'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80',
+      'Luxury-inspired black finish. Designed to stand out effortlessly.',
+    images : [
+      'products/cartier-black.jpeg',
+      'products/cartier-black-1.png',
+    ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Black (Roman)',
-  price: 'Rs. 2,499'
+  price: 'Rs. 2,465'
 }),
   },
   {
     id: 'men-elegance',
     name: 'Elegance',
     price: 'Rs. 3,799',
+    originalPrice: 'Rs. 4,400',
     description:
       'Modern watch with a sleek appearance. Understated and premium.',
-    image:
-      'https://images.unsplash.com/photo-1590664216364-0e2116ec5ac3?w=600&q=80',
+    images : [
+      'products/elegance.jpeg',
+      'products/elegance-1.png',
+    ],
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Elegance',
-  price: 'Rs. 3,799'
+  price: 'Rs. 3,740'
 }),
+  },
+  {
+    id: 'men-placeholder-1',
+    name: 'Coming Soon',
+    price: 'Coming Soon',
+    description: 'An exquisite new timepiece is on its way.',
+    image: null, // null triggers the placeholder UI in ProductCard
+    category: 'Men',
+    purchaseLink: null, // null disables the purchase button
+    comingSoon: true,  // flag used by ProductCard to render placeholder state
+  },
+  {
+    id: 'men-placeholder-2',
+    name: 'Coming Soon',
+    price: 'Coming Soon',
+    description: 'An exquisite new timepiece is on its way.',
+    image: null, // null triggers the placeholder UI in ProductCard
+    category: 'Men',
+    purchaseLink: null, // null disables the purchase button
+    comingSoon: true,  // flag used by ProductCard to render placeholder state
   },
 ]
 
@@ -132,24 +169,30 @@ export const mensWatches = [
 // Replace placeholders with real product objects when ready.
 export const womensWatches = [
   {
-    id: 'women-placeholder-1',
-    name: 'Coming Soon',
-    price: 'Coming Soon',
-    description: 'An exquisite new timepiece is on its way.',
-    image: null, // null triggers the placeholder UI in ProductCard
+    id: 'women-newfande-gold',
+    name: 'New Fande (Gold)',
+    price: '3,910',
+    originalPrice: '4,600',
+    description: 'Clean gold design with a minimal look.',
+    image: '/products/newfande-gold.jpg', 
     category: 'Women',
-    purchaseLink: null, // null disables the purchase button
-    comingSoon: true,  // flag used by ProductCard to render placeholder state
+    purchaseLink: createPurchaseLink({
+  name: 'New Fande (Gold)',
+  price: 'Rs. 3,910'
+}),
   },
   {
-    id: 'women-placeholder-2',
-    name: 'Coming Soon',
-    price: 'Coming Soon',
-    description: 'A refined piece crafted for the modern woman.',
-    image: null,
+    id: 'women-newfande-silver',
+    name: 'New Fande (Silver)',
+    price: '3,910',
+    originalPrice: '4,600',
+    description: 'Clean silver design with a minimal look.',
+    image: '/products/newfande-silver.jpg', 
     category: 'Women',
-    purchaseLink: null,
-    comingSoon: true,
+    purchaseLink: createPurchaseLink({
+  name: 'New Fande (Silver)',
+  price: 'Rs. 3,910'
+}),
   },
   {
     id: 'women-placeholder-3',
