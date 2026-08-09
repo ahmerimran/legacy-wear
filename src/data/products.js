@@ -142,26 +142,6 @@ export const mensWatches = [
   price: 'Rs. 3,740'
 }),
   },
-  {
-    id: 'men-placeholder-1',
-    name: 'Coming Soon',
-    price: 'Coming Soon',
-    description: 'An exquisite new timepiece is on its way.',
-    image: null, // null triggers the placeholder UI in ProductCard
-    category: 'Men',
-    purchaseLink: null, // null disables the purchase button
-    comingSoon: true,  // flag used by ProductCard to render placeholder state
-  },
-  {
-    id: 'men-placeholder-2',
-    name: 'Coming Soon',
-    price: 'Coming Soon',
-    description: 'An exquisite new timepiece is on its way.',
-    image: null, // null triggers the placeholder UI in ProductCard
-    category: 'Men',
-    purchaseLink: null, // null disables the purchase button
-    comingSoon: true,  // flag used by ProductCard to render placeholder state
-  },
 ]
 
 // ── Women's Collection ────────────────────────────────────────────────
@@ -193,15 +173,5 @@ export const womensWatches = [
   name: 'New Fande (Silver)',
   price: 'Rs. 3,910'
 }),
-  },
-  {
-    id: 'women-placeholder-3',
-    name: 'Coming Soon',
-    price: 'Coming Soon',
-    description: 'Timeless elegance, designed just for you.',
-    image: null,
-    category: 'Women',
-    purchaseLink: null,
-    comingSoon: true,
   },
 ]
