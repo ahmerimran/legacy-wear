@@ -42,8 +42,8 @@ export const mensWatches = [
   {
     id: 'men-cartier-black-silver',
     name: 'Cartier Black (Roman)',
-    price: 'Rs. 2,975',
-    originalPrice: 'Rs. 3,500',
+    price: 'Rs. 2,550',
+    originalPrice: 'Rs. 3,000',
     description:
       'Black and silver finish with a clean, modern look. Perfect for everyday wear.',
     // Replace this URL with: '/products/cartier-black.jpg' once you add the image
@@ -54,7 +54,7 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Black',
-  price: 'Rs. 2,975'
+  price: 'Rs. 2,550'
 }),
   },
   {
@@ -77,7 +77,7 @@ export const mensWatches = [
   {
     id: 'men-cartier-brown',
     name: 'Cartier Brown',
-    price: 'Rs. 2,975',
+    price: 'Rs. 2,550',
     originalPrice: 'Rs. 3,000',
     description:
       'Warm brown shade with a classic aesthetic. Simple and stylish.',
@@ -88,7 +88,7 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Brown',
-  price: 'Rs. 2,975'
+  price: 'Rs. 2,550'
 }),
   },
   {
