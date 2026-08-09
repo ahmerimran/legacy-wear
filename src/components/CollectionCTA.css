@@ -1,0 +1,36 @@
+.collection-cta {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem var(--spacing-lg);
+}
+
+.collection-cta__card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #F8F8F8;
+  color: #111111;
+  border: 1px solid #111111;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.collection-cta__card:hover {
+  background-color: #f8f8f8;
+  color:#111111
+}
+
+.collection-cta__arrow {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .collection-cta {
+    flex-direction: column;
+  }
+}

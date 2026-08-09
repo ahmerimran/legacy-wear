@@ -6,6 +6,7 @@ import HeroBanner  from './components/HeroBanner'
 import Collection  from './components/Collection'
 import CTA         from './components/CTA'
 import AboutFooter from './components/AboutFooter'
+import CollectionCTA from './components/CollectionCTA'
 
 // Product data — add / remove watches in this file only
 import { mensWatches, womensWatches } from './data/products'
@@ -19,6 +20,7 @@ export default function App() {
       {/* ── Hero Banner ───────────────────────────────────────────── */}
       <main id="main-content">
         <HeroBanner />
+        <CollectionCTA />
 
         {/* ── Men's Collection ────────────────────────────────────── */}
         <Collection

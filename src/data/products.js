@@ -42,8 +42,8 @@ export const mensWatches = [
   {
     id: 'men-cartier-black-silver',
     name: 'Cartier Black (Roman)',
-    price: 'Rs. 2,550',
-    originalPrice: 'Rs. 3,000',
+    price: 'Rs. 2,720',
+    originalPrice: 'Rs. 3,200',
     description:
       'Black and silver finish with a clean, modern look. Perfect for everyday wear.',
     // Replace this URL with: '/products/cartier-black.jpg' once you add the image
@@ -54,7 +54,7 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Black',
-  price: 'Rs. 2,550'
+  price: 'Rs. 2,720'
 }),
   },
   {
@@ -77,8 +77,8 @@ export const mensWatches = [
   {
     id: 'men-cartier-brown',
     name: 'Cartier Brown',
-    price: 'Rs. 2,550',
-    originalPrice: 'Rs. 3,000',
+    price: 'Rs. 2,720',
+    originalPrice: 'Rs. 3,200',
     description:
       'Warm brown shade with a classic aesthetic. Simple and stylish.',
     images: [
@@ -88,7 +88,7 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Brown',
-  price: 'Rs. 2,550'
+  price: 'Rs. 2,720'
 }),
   },
   {
@@ -128,8 +128,8 @@ export const mensWatches = [
   {
     id: 'men-elegance',
     name: 'Elegance',
-    price: 'Rs. 3,799',
-    originalPrice: 'Rs. 4,400',
+    price: 'Rs. 3,700',
+    originalPrice: 'Rs. 4,255',
     description:
       'Modern watch with a sleek appearance. Understated and premium.',
     images : [
@@ -139,7 +139,7 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Elegance',
-  price: 'Rs. 3,740'
+  price: 'Rs. 3,700'
 }),
   },
 ]
@@ -151,7 +151,7 @@ export const womensWatches = [
   {
     id: 'women-newfande-gold',
     name: 'New Fande (Gold)',
-    price: '3,910',
+    price: '3,900',
     originalPrice: '4,600',
     description: 'Clean gold design with a minimal look.',
     image: '/products/newfande-gold.jpg', 
@@ -164,7 +164,7 @@ export const womensWatches = [
   {
     id: 'women-newfande-silver',
     name: 'New Fande (Silver)',
-    price: '3,910',
+    price: '3,900',
     originalPrice: '4,600',
     description: 'Clean silver design with a minimal look.',
     image: '/products/newfande-silver.jpg', 
