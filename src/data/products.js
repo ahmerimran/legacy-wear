@@ -42,7 +42,7 @@ export const mensWatches = [
   {
     id: 'men-cartier-black-silver',
     name: 'Cartier Black (Roman)',
-    price: 'Rs. 2,720',
+    price: 'Rs. 2,800',
     originalPrice: 'Rs. 3,200',
     description:
       'Black and silver finish with a clean, modern look. Perfect for everyday wear.',
@@ -54,14 +54,14 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Black',
-  price: 'Rs. 2,720'
+  price: 'Rs. 2,800'
 }),
   },
   {
     id: 'men-cartier-blue',
     name: 'Cartier Blue',
-    price: 'Rs. 2,465',
-    originalPrice: 'Rs. 2,900',
+    price: 'Rs. 2,800',
+    originalPrice: 'Rs. 3,200',
     description:
       'Deep blue tone with a refined feel. Adds a subtle touch of class.',
     images : [
@@ -71,13 +71,13 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Blue',
-  price: 'Rs. 2,465'
+  price: 'Rs. 2,800'
 }),
   },
   {
     id: 'men-cartier-brown',
     name: 'Cartier Brown',
-    price: 'Rs. 2,720',
+    price: 'Rs. 2,800',
     originalPrice: 'Rs. 3,200',
     description:
       'Warm brown shade with a classic aesthetic. Simple and stylish.',
@@ -88,14 +88,14 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Brown',
-  price: 'Rs. 2,720'
+  price: 'Rs. 2,800'
 }),
   },
   {
     id: 'men-cartier-black-gold',
     name: 'Cartier Black (Roman)',
-    price: 'Rs. 2,465',
-    originalPrice: 'Rs. 2,900',
+    price: 'Rs. 2,800',
+    originalPrice: 'Rs. 3,200',
     description:
       'Clean gold design with a minimal look. Easy to match with any outfit.',
     images: [ 
@@ -105,14 +105,14 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Black (Roman)',
-  price: 'Rs. 2,465'
+  price: 'Rs. 2,800'
 }),
   },
   {
     id: 'men-cartier-black',
     name: 'Cartier Black (Roman)',
-    price: 'Rs. 2,465',
-    originalPrice: 'Rs. 2,900',
+    price: 'Rs. 2,800',
+    originalPrice: 'Rs. 3,200',
     description:
       'Luxury-inspired black finish. Designed to stand out effortlessly.',
     images : [
@@ -122,14 +122,14 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Cartier Black (Roman)',
-  price: 'Rs. 2,465'
+  price: 'Rs. 2,800'
 }),
   },
   {
     id: 'men-elegance',
     name: 'Elegance',
-    price: 'Rs. 3,700',
-    originalPrice: 'Rs. 4,255',
+    price: 'Rs. 3,800',
+    originalPrice: 'Rs. 4,400',
     description:
       'Modern watch with a sleek appearance. Understated and premium.',
     images : [
@@ -139,7 +139,7 @@ export const mensWatches = [
     category: 'Men',
     purchaseLink: createPurchaseLink({
   name: 'Elegance',
-  price: 'Rs. 3,700'
+  price: 'Rs. 3,800'
 }),
   },
 ]
@@ -158,7 +158,7 @@ export const womensWatches = [
     category: 'Women',
     purchaseLink: createPurchaseLink({
   name: 'New Fande (Gold)',
-  price: 'Rs. 3,910'
+  price: 'Rs. 3,900'
 }),
   },
   {
@@ -171,7 +171,7 @@ export const womensWatches = [
     category: 'Women',
     purchaseLink: createPurchaseLink({
   name: 'New Fande (Silver)',
-  price: 'Rs. 3,910'
+  price: 'Rs. 3,900'
 }),
   },
 ]
