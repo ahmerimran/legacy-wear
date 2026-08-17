@@ -92,23 +92,6 @@ export const mensWatches = [
 }),
   },
   {
-    id: 'men-cartier-black-gold',
-    name: 'Cartier Black (Roman)',
-    price: 'Rs. 2,800',
-    originalPrice: 'Rs. 3,200',
-    description:
-      'Clean gold design with a minimal look. Easy to match with any outfit.',
-    images: [ 
-       '/products/cartier-black-gold.jpeg',
-       '/products/cartier-black-gold-1.png',
-    ],
-    category: 'Men',
-    purchaseLink: createPurchaseLink({
-  name: 'Cartier Black (Roman)',
-  price: 'Rs. 2,800'
-}),
-  },
-  {
     id: 'men-cartier-black',
     name: 'Cartier Black (Roman)',
     price: 'Rs. 2,800',
